@@ -1,7 +1,7 @@
 # Ecommerce-Microservices
 
 Spring Boot Projects as Microservices</br>
-Eureka Server Client as Discovery Server</br>
+Eureka & Server Client as Discovery Server</br>
 Zuul Proxy </br>
 JPA</br>
 hibernate</br>
