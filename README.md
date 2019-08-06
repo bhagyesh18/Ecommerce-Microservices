@@ -15,4 +15,6 @@ Rest Template</br>
 Spring Boot Log: Slf4J delagate, Logback Framework</br>
 Swagger</br>
 
-![alt text](https://github.com/bhagyesh18/Ecommerce-Microservices/blob/master/eureka.JPG?raw=true)
+![alt text](https://github.com/bhagyesh18/Ecommerce-Microservices/blob/master/eureka.jpg?raw=true)
+![alt text]https://github.com/bhagyesh18/Ecommerce-Microservices/blob/master/hystrix.png?raw=true)
+![alt text](https://github.com/bhagyesh18/Ecommerce-Microservices/blob/master/hystrix2.png?raw=true)
