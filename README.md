@@ -12,6 +12,7 @@ hibernate</br>
 MYSQL</br>
 Rest API</br>
 Rest Template</br> 
+Spring Boot Log: Slf4J delagate, Logback Framework</br>
 Swagger</br>
 
 ![alt text](https://github.com/bhagyesh18/Ecommerce-Microservices/blob/master/eureka.JPG?raw=true)
