@@ -2,8 +2,11 @@
 This project is for understanding how spring boot microservices can be created and how can they communicate with each other. Also, includes how to set up the discovery server and proxy server so Angular or Rest UI can call these REST based microservices endpoint. 
 
 Spring Boot Projects as Microservices</br>
+Spring Cloud microservices </br>
 Eureka & Server Client as Discovery Server</br>
 Zuul Proxy </br>
+Hystrix Circuit Breaker for Fault tolerance & Resilience  </br>
+Hystrix Dashboard </br>
 JPA</br>
 hibernate</br>
 MYSQL</br>
