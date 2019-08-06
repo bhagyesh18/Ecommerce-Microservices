@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import com.ecommerce.users.usersmicroservice.model.User;
 import com.ecommerce.users.usersmicroservice.service.UserServices;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 
 @RestController
 @RequestMapping("/api")
@@ -37,6 +39,13 @@ public class UserRestController {
 	}
 	
 	@RequestMapping(method = RequestMethod.GET,value="/users/{id}")
+	@HystrixCommand(fallbackMethod = "getUserFallBack",
+	commandProperties = {	
+			@HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds",value = "2000"),
+			@HystrixProperty(name = "circuitBreaker.requestVolumeThreshold",value = "5"),
+			@HystrixProperty(name = "circuitBreaker.errorThresholdPercentage",value = "50"),
+			@HystrixProperty(name = "circuitBreaker.sleepWindowInMilliseconds",value = "5000")
+	})
 	public ResponseEntity<User> getUser(@PathVariable Long id) {
 		try {
 		User user=userService.getUser(id);
@@ -49,6 +58,15 @@ public class UserRestController {
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
 		}
 	}
+	
+	public ResponseEntity<User> getUserFallBack(@PathVariable Long id) {
+		try {
+			  return ResponseEntity.status(HttpStatus.OK).body(new User("first Name", "last Name", null));
+		}catch (Exception e) {
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+		}
+	}
+	
 	
 	@RequestMapping(method = RequestMethod.POST,value="/users")
 	public String addUser(@RequestBody User user) {
