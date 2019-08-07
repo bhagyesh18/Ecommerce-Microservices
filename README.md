@@ -1,7 +1,7 @@
 # Ecommerce-Microservices
 
 -------------
-What is it? |
+Overview |
 -------------
 This project is for understanding how spring boot microservices can be created and how can they communicate with each other. Also, includes how to set up the discovery server, proxy server with fault tolerance such circuit breaker using Hystrix. 
 
