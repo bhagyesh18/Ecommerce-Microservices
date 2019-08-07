@@ -22,13 +22,20 @@ Technology Stack |
 * Spring Boot Log: Slf4J delagate, Logback Framework
 * Swagger
 
-Eureka & Server Client as Discovery Server</br>
+
+------------------
+Eureka & Server Client as Discovery Server |
+------------------
 ![alt text](https://github.com/bhagyesh18/Ecommerce-Microservices/blob/master/eureka.jpg?raw=true)
- </br>
 
-Hystrix Dashboard </br>
+
+------------------
+Hystrix Dashboard |
+------------------
 ![alt text](https://github.com/bhagyesh18/Ecommerce-Microservices/blob/master/hystrix.png?raw=true)
- </br>
 
-Hystrix Circut Breaker Endpoints Dashboard</br>
+
+------------------
+Hystrix Circut Breaker Endpoints Dashboard |
+------------------
 ![alt text](https://github.com/bhagyesh18/Ecommerce-Microservices/blob/master/hystrix2.png?raw=true)
