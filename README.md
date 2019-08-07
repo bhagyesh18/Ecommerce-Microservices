@@ -1,19 +1,26 @@
 # Ecommerce-Microservices
+
+-------------
+What is it? |
+-------------
 This project is for understanding how spring boot microservices can be created and how can they communicate with each other. Also, includes how to set up the discovery server, proxy server with fault tolerance such circuit breaker using Hystrix. 
 
-Spring Boot Projects as Microservices</br>
-Spring Cloud microservices </br>
-Eureka & Server Client as Discovery Server</br>
-Zuul Proxy </br>
-Hystrix Circuit Breaker for Fault tolerance & Resilience  </br>
-Hystrix Dashboard </br>
-JPA</br>
-hibernate</br>
-MYSQL</br>
-Rest API</br>
-Rest Template</br> 
-Spring Boot Log: Slf4J delagate, Logback Framework</br>
-Swagger</br>
+---------
+Technology Stack |
+---------
+* Spring Boot Projects as Microservices
+* Spring Cloud microservices 
+* Eureka & Server Client as Discovery Server
+* Zuul Proxy 
+* Hystrix Circuit Breaker for Fault tolerance & Resilience  
+* Hystrix Dashboard 
+* JPA
+* hibernate
+* MYSQL
+* Rest API
+* Rest Template 
+* Spring Boot Log: Slf4J delagate, Logback Framework
+* Swagger
 
 Eureka & Server Client as Discovery Server</br>
 ![alt text](https://github.com/bhagyesh18/Ecommerce-Microservices/blob/master/eureka.jpg?raw=true)
